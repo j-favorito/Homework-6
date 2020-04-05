@@ -1,0 +1,4 @@
+$(documeent).ready(function(){
+
+
+})

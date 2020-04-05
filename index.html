@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10" id="jumboTron">
+            <h1>
+                <center>Your Weather ForeCast</center>
+            </h1>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2" id="searchBox">
+            <form>
+                <div class="card">
+                    <div class="card-header">
+                        City Search
+                    </div>
+                    <div class="card-body">
+                        <input class="form-control" id="citySearchBox">
+                        <a href="#" class="btn btn-primary" id="searchBtn">Search</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-8" id="displayBox">
+            <div class="card">
+                <div class="card-header">
+                    Current Weather
+                </div>
+                <div class="card-body selectedSearch">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
