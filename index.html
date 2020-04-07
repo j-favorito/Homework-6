@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 </head>
 
 <body>
@@ -21,7 +25,7 @@
     </div>
     <div class="row">
         <div class="col-sm-1"></div>
-        <div class="col-sm-2" id="searchBox">
+        <div class="col-sm-2">
             <form>
                 <div class="card">
                     <div class="card-header">
@@ -30,16 +34,17 @@
                     <div class="card-body">
                         <input class="form-control" id="citySearchBox">
                         <a href="#" class="btn btn-primary" id="searchBtn">Search</a>
+                        <div id="searchBox"></div>
                     </div>
                 </div>
             </form>
         </div>
-        <div class="col-sm-8" id="displayBox">
+        <div class="col-sm-8">
             <div class="card">
                 <div class="card-header">
                     Current Weather
                 </div>
-                <div class="card-body selectedSearch">
+                <div class="card-body" id="displayBox">
                 </div>
             </div>
         </div>

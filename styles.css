@@ -1,0 +1,34 @@
+.foreCol{
+    background-color: slateblue;
+    margin: 13px;
+}
+
+.city{
+    cursor: pointer;
+    background-color: lightgray;
+    margin-bottom: 2px;
+}
+
+#searchBtn{
+    margin-bottom: 10px;
+}
+
+.low{
+    color: green;
+}
+
+.moderate{
+    color: greenyellow;
+}
+
+.high{
+    color: yellow;
+}
+
+.veryHigh{
+    color: tomato;
+}
+
+.risk{
+    color: red;
+}
