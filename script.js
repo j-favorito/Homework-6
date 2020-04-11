@@ -96,6 +96,7 @@ $(document).ready(function () {
             cityPage.text(cityHistory[i]);
             $(searchBox).append(cityPage);
         }
+        localStorage.setItem("cities", JSON.stringify(cityHistory));
     }
     $("#searchBtn").on("click", function () {
         event.preventDefault();
@@ -182,8 +183,14 @@ $(document).ready(function () {
             displayBox.append(forecastHeader,forecastBox);
         });
     });
-
+    function retrieveHistory(){
+    var storedCities = JSON.parse(localStorage.getItem("cities"));
+    cityHistory.push(storedCities);
+    cityBtns();
+    }
+    
+    retrieveHistory();
     $(document).on("click", ".city", cityDisplay);
-
+    
 
 });
